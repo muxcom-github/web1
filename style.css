@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://use.fontawesome.com/releases/v5.1.0/css/all.css);
+
+
+@charset "utf-8";
+*{ font-family: 'Nanum Gothic', sans-serif;}
+/* Reset CSS  */
+html { height: 100%;overflow-y:scroll; background-color: #fff;  }
+body { font-size: 13px; color:#333; font-family: 'Nanum Gothic', sans-serif;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, th, td, p { margin: 0px; padding:0px;  list-style:none;  }
+fieldset{ border: 0px; }
+a{font-style:normal; text-decoration:none; color:#555;}
+hr, legend {height: 0; left: -5000px; line-height: 0; overflow-x: hidden; overflow-y: hidden; position: absolute; visibility: hidden;width: 0;}
+caption {font-size: 0; height: 0; line-height: 0; visibility: hidden; width: 0;}
+* {-webkit-text-size-adjust:none;}
+* { margin:0; padding:0; border:0; outline:0;  }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+img, video { max-width:100%; border:0; vertical-align:top; }
+table { border-collapse:collapse; border-spacing:0; border: 0px solid #E5E5E5; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+td,th {vertical-align: middle;}
+td strong {font-weight: 100;	font-size: 5px;vertical-align: bottom;}
+a:hover{text-decoration:none;}
+ul:after{content:""; display:block; clear:both;}
+
+/************* css ******************/
+body:after{content:""; display:block; clear:both;}
+html { background: #042c3a; }
+body { background: url(img/bg.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; text-align: center; }
+
+h1.title { color: #fff; font-size: 35px; padding: 90px 0 50px 0; }
+h2.time { color: #fff; font-weight: 300; font-size: 18px; }
+h2.time span { padding: 0 30px; }
+h2.time b { font-weight: 600; padding-right: 10px; }
+a.refresh { color: #fff; text-align: center; display: inline-block; font-size: 28px; padding: 40px 0 0 0; transform: scale(0.97,0.97); }
+a.refresh img { padding-top: 15px; }
+a.refresh:hover { transform: scale(1,1); }
+.sensor { padding: 40px 0; }
+.sensor h3 { font-size: 20px; color: #fff; font-weight: 400; padding-bottom: 20px; }
+.sensor li { display: inline-block; }
+.sensor li > a > div { width: 210px; height: 210px; border: 2px solid #fff; border-radius: 210px; background: rgba(255,255,255,0.1); margin: 0 50px; }
+.sensor li h4 { color: #fff; font-size: 25px; font-weight: 400; padding: 30px 0 10px 0; }
+.sensor li .line { background: #fff; width: 50px; height: 1px; margin: auto; }
+.sensor li img { padding: 15px 0 10px 0; transform: scale(0.95,0.95); }
+.sensor li h5 { color: #fff; font-size: 30px; font-weight: 400; letter-spacing: -2px; }
+.sensor ul:nth-of-type(2) { padding-top: 30px; }
+.sensor li.discon > a > div { background: rgba(255,0,0,0.3); }
+.sensor li.off > a > div { background: rgba(0,0,0,0.2); }
+.sensor li.off h5 { color: #e6e6e6; }
+.sensor li:hover img { transform: scale(1,1); }
+
+@media (min-width:646px) and (max-width:958px){/*테블릿*/
+	h1.title { padding-top: 50px; }
+	.sensor ul:nth-of-type(2) { padding-top:0; padding-bottom: 50px; }
+}
+
+@media (max-width:645px){/*모바일*/
+	h1.title { padding: 60px 0 20px 0; }
+	h2.time span { display: block; padding: 10px 0; }
+	.sensor li { padding-bottom: 20px; }
+	a.refresh { position: fixed; top:0; right:10px; font-size: 0; width: 100px; padding:0; }
+	.sensor { padding: 50px 0 0 0; }
+	.sensor ul:nth-of-type(2) { padding-top:0; padding-bottom: 50px; }
+}
